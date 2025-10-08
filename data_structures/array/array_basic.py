@@ -63,7 +63,4 @@ class Array:
         string = ''
         if(self.size == 0):
             return 'Empty Array'
-        for i in self.array:
-            if(i != None):
-                string += str(i) + ' '
-        return string
+        return ' '.join(str(self.array[i]) for i in range(self.size))
