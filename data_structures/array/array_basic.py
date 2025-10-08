@@ -60,7 +60,6 @@ class Array:
         return False
 
     def __str__(self):
-        string = ''
         if(self.size == 0):
             return 'Empty Array'
         return ' '.join(str(self.array[i]) for i in range(self.size))
